@@ -1,0 +1,9 @@
+embedding_size: 64
+is_multimodal_model: False
+reg_weight: [1e-03, 1e-04, 1e-05]
+
+# dummy features
+vision_feature_file: 'vit_csl.npy'
+text_feature_file: 'all-MiniLM-L12-v2.npy'
+
+hyper_parameters: ["reg_weight"]

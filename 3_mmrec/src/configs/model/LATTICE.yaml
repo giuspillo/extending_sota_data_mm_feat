@@ -1,0 +1,33 @@
+embedding_size: 64
+feat_embed_dim: 64
+weight_size: [64, 64]
+lambda_coeff: 0.9
+reg_weight: [1e-03, 1e-04, 1e-05]
+cf_model: lightgcn
+mess_dropout: [0.1, 0.1]
+n_layers: [1,2,3]
+knn_k: 10
+
+
+# single lfm2k
+# vision_feature_file: ['vit_cls.npy', 'vit_avg.npy', 'all-MiniLM-L6-v2.npy', 'all-mpnet-base-v2.npy', 'whisper.npy', 'vggish.npy', 'vgg.npy', 'resnet152.npy']
+
+# single dbbook
+# vision_feature_file: ['vit_cls.npy', 'vit_avg.npy', 'vgg.npy', 'resnet152.npy', 'all-MiniLM-L6-v2.npy', 'all-mpnet-base-v2.npy']
+
+# single ml1m
+# vision_feature_file: ['vit_cls.npy', 'vit_avg.npy', 'all-MiniLM-L6-v2.npy', 'all-mpnet-base-v2.npy', 'whisper.npy', 'vggish.npy', 'vgg.npy', 'resnet152.npy', 'i3d.npy', 'r2p1d.npy']
+
+# double lfm2k
+# vision_feature_file: ['resnet152.npy', 'whisper.npy', 'all-mpnet-base-v2.npy']
+# text_feature_file: ['resnet152.npy', 'whisper.npy', 'all-mpnet-base-v2.npy']
+
+# double dbbook
+vision_feature_file: ['resnet152.npy']
+text_feature_file: ['all-MiniLM-L6-v2.npy']
+
+# double ml1m
+# vision_feature_file: ['vit_cls.npy', 'whisper.npy', 'all-mpnet-base-v2.npy', 'i3d.npy']
+# text_feature_file: ['vit_cls.npy', 'whisper.npy', 'all-mpnet-base-v2.npy', 'i3d.npy']
+
+hyper_parameters: ["reg_weight", "vision_feature_file", "text_feature_file", "n_layers",]
