@@ -9,7 +9,7 @@ However, to further improve the reproducibility of our results, we provide the l
 ## Environment for all the models except VGGish
 
 ```
-# create the environment
+# create the environment
 virtualenv -p python3.10 _env
 source _env/bin/activate
 

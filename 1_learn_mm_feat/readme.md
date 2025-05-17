@@ -1,4 +1,6 @@
-# Structure of this folder
+## Learn Multimodal Features
+
+### Structure of this folder
 
 In this folder, we provide:
 1) the scripts we run to download the raw multimodal data we used (e.g., movie trailers, book covers, music songs)
