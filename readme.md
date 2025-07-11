@@ -10,12 +10,16 @@ As described in the paper, this repository is structred so that anyone can perfo
 - run the experiment with MMRec to reproduce our results
 
 Each of the actions is mapped with a folder in this repository:
-- `1_learn_mm_feat` to download raw files and learn multimodal features
-- `2_data_processing` to provide MMRec the files in the supported format
-- `3_mmrec` to run the experiments with MMRec
+- `1_download_mm_feat` to download raw multimidal feature files
+- `2_learn_mm_feat` to learn multimodal features
+- `3_data_processing` to provide MMRec the files in the supported format
+- `4_mmrec` to run the experiments with MMRec
+
+## 1 Download raw multimodal features
+In `1_download_mm_feat` you will find python notebooks to download raw multimodal feature files foe each dataset.
 
 ## Learn multimodal features
-In `1_learn_mm_feat`, you will find the scripts to download the raw files (for each dataset) and learn the multimodal features using the encoders we selected.
+In `2_learn_mm_feat`, you will find the scripts learn the multimodal features using the encoders we selected.
 
 We suggest to carefully read both the `readme.md` file and the `instructions_env.md` file, as they provide crucial information to correctly set up everything. 
 
